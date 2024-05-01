@@ -1,0 +1,84 @@
+/* Custom CSS styles */
+body {
+    background-color: #f8f9fa;
+    padding-top: 50px;
+}
+
+.container {
+    margin-top: 50px;
+}
+
+.card {
+    border: 1px solid #ced4da;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-header {
+    background-color: #007bff;
+    color: #030303;
+    padding: 15px;
+    border-radius: 8px 8px 0 0;
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.btn-primary {
+    opacity: 1;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.btn-primary:hover {
+    opacity: 0.7;
+}
+
+.btn-success {
+    opacity: 1;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.btn-success:hover {
+    opacity: 0.7;
+}
+
+/* JavaScript animation class */
+.move-animation {
+    animation: moveAnimation 1s ease-in-out infinite alternate;
+}
+
+@keyframes moveAnimation {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(5px);
+    }
+}
+
+.fade-in {
+    animation: fadeInAnimation 1s ease-in-out forwards;
+}
+
+.fade-out {
+    animation: fadeOutAnimation 1s ease-in-out forwards;
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeOutAnimation {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
